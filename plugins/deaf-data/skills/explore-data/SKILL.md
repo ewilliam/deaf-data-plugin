@@ -28,5 +28,6 @@ Use the connected Deaf Data Lab MCP tools; no local data or runtime is needed.
 Example response shape (fill only from actual tool results):
 “Among [defined population] in [place], [estimate and unit, uncertainty and confidence level]
 were employed during [survey window]. [Material limitation]. Source: [returned citation/link].”
-Follow with recoverable canonical details. A suppressed result instead says “The service withheld
+Keep canonical details in the tool context; show them when requested, following the shared
+Markdown presentation conventions. A suppressed result instead says “The service withheld
 this estimate: [returned reason]”; never insert an estimated number.

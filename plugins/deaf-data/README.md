@@ -4,7 +4,7 @@ Explore aggregate statistics, understand definitions, compare supported populati
 periods, and share findings with uncertainty and reproducible context. No Bun, Python, local Census
 data or access to the application repository is needed.
 
-Version: 0.2.0. Published by William Albright under MIT.
+Version: 0.2.1. Published by William Albright under MIT.
 Repository: https://github.com/ewilliam/deaf-data-plugin. Marketplace: `deaf-data-lab`.
 MCP endpoint: https://deaf-data.vercel.app/mcp. Access: anonymous, approved public aggregates only.
 Support: https://github.com/ewilliam/deaf-data-plugin/issues. Tested client versions and file delivery: Codex CLI 0.158.0 manifest/schema validation and Claude Code 2.1.274 isolated install/uninstall checks passed. Hosted MCP tools, resources and CSV/JSON export bytes were verified with the official SDK. Full client conversation, upgrade, attachment-delivery and Deaf-user comprehension evaluations remain pending; no claim of completed acceptance is made. Until your client delivers an actual attachment, use the documented usable-text and canonical-query fallback.
@@ -22,7 +22,7 @@ is distinct from completed live client acceptance; see the validation status abo
 | ChatGPT                   | Upload the `chatgpt-skills.zip` release asset | Register the MCP app separately and select it with the skills; see connected-package instructions below |
 
 Download the versioned ZIPs from [Releases](https://github.com/ewilliam/deaf-data-plugin/releases).
-Names include the version, for example `deaf-data-0.2.0-claude.zip`.
+Names include the version, for example `deaf-data-0.2.1-claude.zip`.
 Do not upload GitHub's **Source code ZIP** or **Code → Download ZIP** as a plugin: those contain
 a marketplace repository, with the actual plugin nested inside it.
 
@@ -59,7 +59,7 @@ website deployment. The answer names the actual survey window.
 ## Claude web, Desktop and Cowork
 
 Open **Customize → Browse plugins** (or the Plugins directory in your client), choose the option
-to upload a custom plugin, and select `deaf-data-0.2.0-claude.zip`. Install/enable it and
+to upload a custom plugin, and select `deaf-data-0.2.1-claude.zip`. Install/enable it and
 review its connector setup. The server is https://deaf-data.vercel.app/mcp and needs no authentication. If the
 connector is not imported automatically, add that URL as a custom remote connector and enable
 it alongside the plugin. Start a new conversation and check that all three skills and the data
@@ -67,7 +67,7 @@ connection are available. Account/workspace policies may restrict custom uploads
 
 ## ChatGPT: skills and data together
 
-Upload `deaf-data-0.2.0-chatgpt-skills.zip` using **Plugins → Add → Upload**. This is a
+Upload `deaf-data-0.2.1-chatgpt-skills.zip` using **Plugins → Add → Upload**. This is a
 standalone skill package with the manifest and `skills/` at its root. It intentionally contains
 no raw MCP configuration; a skills upload does not register the service.
 
@@ -83,7 +83,7 @@ connection's browser URL (starts with `plugin_asdk_app`). A maintainer can then 
 python3 build-archives.py --output connected-release --chatgpt-app-id YOUR_REGISTERED_APP_ID
 ```
 
-Upload the resulting `deaf-data-0.2.0-chatgpt-connected.zip`. The `.app.json` mapping binds
+Upload the resulting `deaf-data-0.2.1-chatgpt-connected.zip`. The `.app.json` mapping binds
 the three skills to that registered connection. The ID must belong to a connection available to
 your account/workspace; it does not grant access. This account-specific archive is not included
 in the generic public release. Do not substitute a fabricated ID. Upload acceptance and tool
@@ -111,6 +111,11 @@ Estimates describe the service's defined survey populations and universes. They 
 records. Answers retain uncertainty and limitations; suppression means withheld, not zero, and
 missing coverage is different from suppression. Overlapping survey windows and changed geography
 boundaries can prevent comparison. The service's returned reasons govern interpretation.
+
+Routine answers use plain Markdown with the finding, uncertainty, essential caveats and a source
+link. They do not rely on HTML disclosure panels or append technical query dumps. Ask “Show the
+methods and exact query” for sample details, versioned provenance and canonical reproduction.
+Follow-up answers carry forward your selections without repeating unchanged technical details.
 
 Exports are complete bounded CSV/JSON resources. Where your client supports attachments, the
 assistant checks completeness, byte count and SHA-256 and retains query/provenance details beside
