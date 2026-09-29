@@ -1,4 +1,5 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "deaf-data",
   "version": "0.2.0",
   "description": "Explore and interpret Deaf Data Lab aggregate statistics with reproducible context.",
@@ -6,7 +7,5 @@
     "name": "William Albright"
   },
   "repository": "https://github.com/ewilliam/deaf-data-plugin",
-  "license": "MIT",
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  "license": "MIT"
 }
