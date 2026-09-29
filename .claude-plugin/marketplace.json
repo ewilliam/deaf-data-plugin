@@ -1,0 +1,13 @@
+{
+  "name": "deaf-data-lab",
+  "description": "Explore and interpret Deaf Data Lab aggregate statistics with reproducible context.",
+  "owner": {
+    "name": "William Albright"
+  },
+  "plugins": [
+    {
+      "name": "deaf-data",
+      "source": "./plugins/deaf-data"
+    }
+  ]
+}

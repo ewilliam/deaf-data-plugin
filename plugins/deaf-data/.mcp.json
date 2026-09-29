@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "deaf-data-lab": {
+      "type": "http",
+      "url": "https://deaf-data.vercel.app/mcp"
+    }
+  }
+}

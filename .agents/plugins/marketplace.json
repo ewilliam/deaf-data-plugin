@@ -1,0 +1,20 @@
+{
+  "name": "deaf-data-lab",
+  "interface": {
+    "displayName": "Deaf Data Lab"
+  },
+  "plugins": [
+    {
+      "name": "deaf-data",
+      "source": {
+        "source": "local",
+        "path": "./plugins/deaf-data"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

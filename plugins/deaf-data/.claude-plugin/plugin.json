@@ -1,0 +1,12 @@
+{
+  "name": "deaf-data",
+  "version": "0.1.0",
+  "description": "Explore and interpret Deaf Data Lab aggregate statistics with reproducible context.",
+  "author": {
+    "name": "William Albright"
+  },
+  "repository": "https://github.com/ewilliam/deaf-data-plugin",
+  "license": "MIT",
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}
